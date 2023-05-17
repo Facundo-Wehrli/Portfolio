@@ -279,7 +279,7 @@ svg {
   color: var(--first-color);
 }
 
-.come__title {
+.home__title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-semi-bold);
 }
@@ -325,6 +325,27 @@ svg {
 
 /*=============== BUTTON ===============*/
 
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: box-shadow .4s;
+  -webkit-transition: box-shadow .4s;
+  -moz-transition: box-shadow .4s;
+  -ms-transition: box-shadow .4s;
+  -o-transition: box-shadow .4s;
+}
+
+.button:hover{
+  box-shadow: 0 8px 24px hsl(var(--hue), 100%, 40%, .25);
+} 
 
 /*=============== ABOUT ===============*/
 
