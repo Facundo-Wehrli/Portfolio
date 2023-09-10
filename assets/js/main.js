@@ -37,9 +37,36 @@ const blurHeader = () => {
     this.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
-
 /*=============== EMAIL JS ===============*/
+//DOCS:  https://www.emailjs.com/docs/tutorial/creating-contact-form/
+const contactForm = document.getElementById('contact-form'),
+contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+// serviceID - templateID - #form - publivcKey
+emailjs.sendForm('service_hnhfcvm', 'template_o4xwpy7', '#contact-form', 'nMa5rYlyfQyz1LF2j')
+    .then(() =>{
+        //Show sent message
+        contactMessage.textContent = 'Message sent successfully ✅'
+        
+        //Remove message after five seconds
+        setTimeout(()=>{
+            contactMessage.textContent= ''
+        }, 4000)
+
+        //Clear input fields
+        contactForm.reset()
+    }, (error) =>{
+        //Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+        console.log(error)
+    })
+}
+contactForm.addEventListener('submit', sendEmail)
+
+// TODO Min: 1:12:36
 
 /*=============== SHOW SCROLL UP ===============*/
 
