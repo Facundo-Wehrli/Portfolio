@@ -66,10 +66,14 @@ emailjs.sendForm('service_hnhfcvm', 'template_o4xwpy7', '#contact-form', 'nMa5rY
 }
 contactForm.addEventListener('submit', sendEmail)
 
-// TODO Min: 1:12:36
 
 /*=============== SHOW SCROLL UP ===============*/
-
+const scrollUp = () =>{
+    const scrollUP = document.getElementById('scroll-up')
+    //When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    this.scrollY >= 350 ? scrollUP.classList.add('show-scroll') : scrollUP.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
