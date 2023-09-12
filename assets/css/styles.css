@@ -164,7 +164,7 @@ svg {
   background-color: var(--container-color);
   top: 0;
   left: 0;
-  z-index: var(--z--fixed);
+  z-index: var(--z-fixed);
 }
 
 .nav {
