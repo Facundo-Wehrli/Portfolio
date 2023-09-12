@@ -1,5 +1,5 @@
 
-# Facundo Wehrli Modern(2023) Responsive Portfolio Website HTML,CSS #
+# Facundo Wehrli Modern(2023) Responsive Portfolio Website HTML, CSS & JavaScript #
 
 - Responsive Portfolio Website Design Using HTML CSS & JavaScript
 - Contains animations when scrolling.
